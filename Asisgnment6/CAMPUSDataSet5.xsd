@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CAMPUSDataSet5" targetNamespace="http://tempuri.org/CAMPUSDataSet5.xsd" xmlns:mstns="http://tempuri.org/CAMPUSDataSet5.xsd" xmlns="http://tempuri.org/CAMPUSDataSet5.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="CAMPUSConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CAMPUSConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Asisgnment6.Properties.Settings.GlobalReference.Default.CAMPUSConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SALESTableAdapter" GeneratorDataComponentClassName="SALESTableAdapter" Name="SALES" UserDataComponentName="SALESTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CAMPUSConnectionString (Settings)" DbObjectName="dbo.SALES" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT SaleId, SaleDate, AgentKey, Amount, DestinationKey, AgentId, AgentName, OfficeKey, OfficeId, OfficeLocation, DestinationId, DestinationName FROM dbo.SALES</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="SaleId" DataSetColumn="SaleId" />
+              <Mapping SourceColumn="SaleDate" DataSetColumn="SaleDate" />
+              <Mapping SourceColumn="AgentKey" DataSetColumn="AgentKey" />
+              <Mapping SourceColumn="Amount" DataSetColumn="Amount" />
+              <Mapping SourceColumn="DestinationKey" DataSetColumn="DestinationKey" />
+              <Mapping SourceColumn="AgentId" DataSetColumn="AgentId" />
+              <Mapping SourceColumn="AgentName" DataSetColumn="AgentName" />
+              <Mapping SourceColumn="OfficeKey" DataSetColumn="OfficeKey" />
+              <Mapping SourceColumn="OfficeId" DataSetColumn="OfficeId" />
+              <Mapping SourceColumn="OfficeLocation" DataSetColumn="OfficeLocation" />
+              <Mapping SourceColumn="DestinationId" DataSetColumn="DestinationId" />
+              <Mapping SourceColumn="DestinationName" DataSetColumn="DestinationName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CAMPUSDataSet5" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="CAMPUSDataSet5" msprop:Generator_UserDSName="CAMPUSDataSet5">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SALES" msprop:Generator_TableClassName="SALESDataTable" msprop:Generator_TableVarName="tableSALES" msprop:Generator_TablePropName="SALES" msprop:Generator_RowDeletingName="SALESRowDeleting" msprop:Generator_RowChangingName="SALESRowChanging" msprop:Generator_RowEvHandlerName="SALESRowChangeEventHandler" msprop:Generator_RowDeletedName="SALESRowDeleted" msprop:Generator_UserTableName="SALES" msprop:Generator_RowChangedName="SALESRowChanged" msprop:Generator_RowEvArgName="SALESRowChangeEvent" msprop:Generator_RowClassName="SALESRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SaleId" msprop:Generator_ColumnVarNameInTable="columnSaleId" msprop:Generator_ColumnPropNameInRow="SaleId" msprop:Generator_ColumnPropNameInTable="SaleIdColumn" msprop:Generator_UserColumnName="SaleId" type="xs:int" />
+              <xs:element name="SaleDate" msprop:Generator_ColumnVarNameInTable="columnSaleDate" msprop:Generator_ColumnPropNameInRow="SaleDate" msprop:Generator_ColumnPropNameInTable="SaleDateColumn" msprop:Generator_UserColumnName="SaleDate" type="xs:dateTime" />
+              <xs:element name="AgentKey" msprop:Generator_ColumnVarNameInTable="columnAgentKey" msprop:Generator_ColumnPropNameInRow="AgentKey" msprop:Generator_ColumnPropNameInTable="AgentKeyColumn" msprop:Generator_UserColumnName="AgentKey" type="xs:int" />
+              <xs:element name="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" msprop:Generator_UserColumnName="Amount" type="xs:decimal" />
+              <xs:element name="DestinationKey" msprop:Generator_ColumnVarNameInTable="columnDestinationKey" msprop:Generator_ColumnPropNameInRow="DestinationKey" msprop:Generator_ColumnPropNameInTable="DestinationKeyColumn" msprop:Generator_UserColumnName="DestinationKey" type="xs:int" />
+              <xs:element name="AgentId" msprop:Generator_ColumnVarNameInTable="columnAgentId" msprop:Generator_ColumnPropNameInRow="AgentId" msprop:Generator_ColumnPropNameInTable="AgentIdColumn" msprop:Generator_UserColumnName="AgentId" type="xs:int" minOccurs="0" />
+              <xs:element name="AgentName" msprop:Generator_ColumnVarNameInTable="columnAgentName" msprop:Generator_ColumnPropNameInRow="AgentName" msprop:Generator_ColumnPropNameInTable="AgentNameColumn" msprop:Generator_UserColumnName="AgentName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OfficeKey" msprop:Generator_ColumnVarNameInTable="columnOfficeKey" msprop:Generator_ColumnPropNameInRow="OfficeKey" msprop:Generator_ColumnPropNameInTable="OfficeKeyColumn" msprop:Generator_UserColumnName="OfficeKey" type="xs:int" minOccurs="0" />
+              <xs:element name="OfficeId" msprop:Generator_ColumnVarNameInTable="columnOfficeId" msprop:Generator_ColumnPropNameInRow="OfficeId" msprop:Generator_ColumnPropNameInTable="OfficeIdColumn" msprop:Generator_UserColumnName="OfficeId" type="xs:int" minOccurs="0" />
+              <xs:element name="OfficeLocation" msprop:Generator_ColumnVarNameInTable="columnOfficeLocation" msprop:Generator_ColumnPropNameInRow="OfficeLocation" msprop:Generator_ColumnPropNameInTable="OfficeLocationColumn" msprop:Generator_UserColumnName="OfficeLocation" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DestinationId" msprop:Generator_ColumnVarNameInTable="columnDestinationId" msprop:Generator_ColumnPropNameInRow="DestinationId" msprop:Generator_ColumnPropNameInTable="DestinationIdColumn" msprop:Generator_UserColumnName="DestinationId" type="xs:int" minOccurs="0" />
+              <xs:element name="DestinationName" msprop:Generator_ColumnVarNameInTable="columnDestinationName" msprop:Generator_ColumnPropNameInRow="DestinationName" msprop:Generator_ColumnPropNameInTable="DestinationNameColumn" msprop:Generator_UserColumnName="DestinationName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:SALES" />
+      <xs:field xpath="mstns:SaleId" />
+      <xs:field xpath="mstns:AgentId" />
+      <xs:field xpath="mstns:OfficeId" />
+      <xs:field xpath="mstns:DestinationId" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

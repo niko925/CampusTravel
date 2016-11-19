@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8C0A74D2-3A73-48F4-AD90-75C432B400AB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Asisgnment6</RootNamespace>
+    <AssemblyName>Asisgnment6</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddAgent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAgent.Designer.cs">
+      <DependentUpon>AddAgent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSale.Designer.cs">
+      <DependentUpon>AddSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Agent.cs" />
+    <Compile Include="AgentBookings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgentBookings.Designer.cs">
+      <DependentUpon>AgentBookings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CampusDatabase .cs" />
+    <Compile Include="CAMPUSDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CAMPUSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CAMPUSDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CAMPUSDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CAMPUSDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CAMPUSDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CAMPUSDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CAMPUSDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CAMPUSDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CAMPUSDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CAMPUSDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CAMPUSDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CAMPUSDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CAMPUSDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CAMPUSDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CAMPUSDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CAMPUSDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CAMPUSDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabasePathForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabasePathForm.Designer.cs">
+      <DependentUpon>DatabasePathForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseTable.Designer.cs">
+      <DependentUpon>DatabaseTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Destination.cs" />
+    <Compile Include="OpeningScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpeningScreen.Designer.cs">
+      <DependentUpon>OpeningScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sale.cs" />
+    <Compile Include="SearchResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchResults.Designer.cs">
+      <DependentUpon>SearchResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchSales.Designer.cs">
+      <DependentUpon>SearchSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateSale.Designer.cs">
+      <DependentUpon>UpdateSale.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddAgent.resx">
+      <DependentUpon>AddAgent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSale.resx">
+      <DependentUpon>AddSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgentBookings.resx">
+      <DependentUpon>AgentBookings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabasePathForm.resx">
+      <DependentUpon>DatabasePathForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseTable.resx">
+      <DependentUpon>DatabaseTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpeningScreen.resx">
+      <DependentUpon>OpeningScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SearchResults.resx">
+      <DependentUpon>SearchResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchSales.resx">
+      <DependentUpon>SearchSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateSale.resx">
+      <DependentUpon>UpdateSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="CAMPUSDataSet.xsc">
+      <DependentUpon>CAMPUSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CAMPUSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CAMPUSDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CAMPUSDataSet.xss">
+      <DependentUpon>CAMPUSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CAMPUSDataSet1.xsc">
+      <DependentUpon>CAMPUSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CAMPUSDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CAMPUSDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CAMPUSDataSet1.xss">
+      <DependentUpon>CAMPUSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CAMPUSDataSet2.xsc">
+      <DependentUpon>CAMPUSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="CAMPUSDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CAMPUSDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CAMPUSDataSet2.xss">
+      <DependentUpon>CAMPUSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="CAMPUSDataSet3.xsc">
+      <DependentUpon>CAMPUSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="CAMPUSDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CAMPUSDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CAMPUSDataSet3.xss">
+      <DependentUpon>CAMPUSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="CAMPUSDataSet4.xsc">
+      <DependentUpon>CAMPUSDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="CAMPUSDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CAMPUSDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CAMPUSDataSet4.xss">
+      <DependentUpon>CAMPUSDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="CAMPUSDataSet5.xsc">
+      <DependentUpon>CAMPUSDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="CAMPUSDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CAMPUSDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CAMPUSDataSet5.xss">
+      <DependentUpon>CAMPUSDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="CAMPUSDataSet6.xsc">
+      <DependentUpon>CAMPUSDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="CAMPUSDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CAMPUSDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CAMPUSDataSet6.xss">
+      <DependentUpon>CAMPUSDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="CAMPUSDataSet7.xsc">
+      <DependentUpon>CAMPUSDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="CAMPUSDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CAMPUSDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CAMPUSDataSet7.xss">
+      <DependentUpon>CAMPUSDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="CAMPUSDataSet8.xsc">
+      <DependentUpon>CAMPUSDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="CAMPUSDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CAMPUSDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CAMPUSDataSet8.xss">
+      <DependentUpon>CAMPUSDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CAMPUS.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CAMPUS_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>CAMPUS.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
